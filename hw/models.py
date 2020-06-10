@@ -117,11 +117,19 @@ def main():
 
 if __name__ == "__main__":
 
-    category = Categories('Стулья', 'Разновидные стулья, кресла')
-    unit = Units('шт.')
-    good = Goods('Prestige')
-    position = Positions('менеджер')
-    employee = Employees('Иванов Петр Михаилович')
-    vendor = Vendors('team7', 'OOO', 'Moscow, Tverskaya str. 1',
-                     '+7(499)799-95-65', 'team7@mail.com')
+    # category = Categories('Стулья', 'Разновидные стулья, кресла')
+    # unit = Units('шт.')
+    # good = Goods('Prestige')
+    # position = Positions('менеджер')
+    # employee = Employees('Иванов Петр Михаилович')
+    # vendor = Vendors('team7', 'OOO', 'Moscow, Tverskaya str. 1',
+    #                  '+7(499)799-95-65', 'team7@mail.com')
+    # дополнительное наполнение
+    category = Categories('Телефоны', 'Селефоны, смартфоны и планшеты')
+    unit = Units('ед.')
+    good = Goods('iPhoneX')
+    position = Positions('кассир')
+    employee = Employees('Тарасова Ироина Викторовна')
+    vendor = Vendors('Apple', 'LLT', 'CL, Central str. 12b',
+                     '+1(9955)123-274-75', 'info@apple.com')
     create_table(category, unit, good, position, employee, vendor)
